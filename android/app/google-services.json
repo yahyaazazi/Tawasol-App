@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "207286663819",
+    "project_id": "tawasol-app-cb625",
+    "storage_bucket": "tawasol-app-cb625.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207286663819:android:f57931900cbbbfe239f28e",
+        "android_client_info": {
+          "package_name": "com.example.tawasol_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207286663819-qlh55h3iq15g343p166tg82tmb877t79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD19dwFa9P-8aNXDOp3rXRE-nocGXKkSl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207286663819-qlh55h3iq15g343p166tg82tmb877t79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
