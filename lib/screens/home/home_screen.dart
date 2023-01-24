@@ -34,7 +34,6 @@ class _HomeScreenState extends BaseView<HomeScreen, HomeViewModel>
             floatingActionButton: FloatingActionButton(
               onPressed: () {
                 Navigator.pushNamed(context, AddRoomScreen.routeName);
-
               },
               child: Icon(Icons.add),
             ),
@@ -53,21 +52,19 @@ class _HomeScreenState extends BaseView<HomeScreen, HomeViewModel>
                     icon: Icon(Icons.logout))
               ],
             ),
-            body: Consumer<HomeViewModel>(
-              builder: (_, homeViewModel, c) {
-                return GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    mainAxisSpacing: 12,
-                    crossAxisSpacing: 12,
-                  ),
-                  itemBuilder: (context, index) {
-                    return RoomWidget(homeViewModel.rooms[index]);
-                  },
-                  itemCount: homeViewModel.rooms.length,
-                );
-              }
-            ),
+            body: Consumer<HomeViewModel>(builder: (_, homeViewModel, c) {
+              return GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 12,
+                ),
+                itemBuilder: (context, index) {
+                  return RoomWidget(homeViewModel.rooms[index]);
+                },
+                itemCount: homeViewModel.rooms.length,
+              );
+            }),
           ),
         ],
       ),

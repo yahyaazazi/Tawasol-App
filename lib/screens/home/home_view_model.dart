@@ -10,6 +10,8 @@ class HomeViewModel extends BaseViewModel<HomeNavigator> {
   void getRooms() {
     DataBaseUtils.getRoomsFromFirestore().then((value) {
       rooms = value;
+    }).catchError((error) {
+      navigator!.showMessage(error.toString());
     });
   }
 }
